@@ -11,6 +11,11 @@
   visualLink.href = 'assets/hero-visual-refresh.css';
   document.head.appendChild(visualLink);
 
+  const copyLayer = document.createElement('script');
+  copyLayer.src = 'assets/integridade-copy.js';
+  copyLayer.defer = true;
+  document.head.appendChild(copyLayer);
+
   const typography = document.createElement('style');
   typography.textContent = `
     body, button, input, textarea, select {
